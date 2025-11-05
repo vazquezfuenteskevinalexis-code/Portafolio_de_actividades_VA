@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema con Código y Glosario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content-wrapper {
+            background: #f5f5f5;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .tema-titulo {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .tema-titulo h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .tema-titulo p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .section h3 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .code-container {
+            background: #87ceeb;
+            border-radius: 10px;
+            padding: 20px;
+            overflow-x: auto;
+            margin-top: 15px;
+        }
+
+        .code-container pre {
+            margin: 0;
+            color: #e2e8f0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .code-container code {
+            display: block;
+        }
+
+        .keyword { color: #ff79c6; }
+        .function { color: #50fa7b; }
+        .string { color: #f1fa8c; }
+        .comment { color: #6272a4; }
+        .number { color: #bd93f9; }
+
+        .glosario-item {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glosario-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .glosario-item h4 {
+            color: #667eea;
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .glosario-item p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .parametros {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .parametros strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .parametros code {
+            background: #2d3748;
+            color: #50fa7b;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .tema-titulo h2 {
+                font-size: 1.5em;
+            }
+
+            .section h3 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Realizado por: Estrada Vazquez Kevin Alexis</h1>
+            <p>Especialidad de IA del CBTIS 144</p>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="tema-titulo">
+                <h2>Tema 1: Funciones en Python</h2>
+                <p>Creación y uso de funciones personalizadas</p>
+            </div>
+
+            <div class="section">
+                <h3>📝 Código del Ejemplo</h3>
+                <div class="code-container">
+                    <pre>
+"""
+OCR=OPTICAL CHARACTER RECOGNITION/RECONOCIMIENTO
+OPTICO DE CARACTERES
+POR EJEMPLO:
+-FOTO DE UN DOCUMENTO
+-DOCUMENTO ESCANEADO
+-UN RECIBO
+-SEÑAL CON LETRAS, UNA FOTO BIEN ENFOCADA
+
+¿QUE HACE?=RECONOCE LAS FORMAS DE LAS LETRAS Y
+CONVIERTE A TEXTO DIGITAL EDITABLE/COPIABLEmanipular
+import pytesseract #
+"""
+#C:\Users\MATUTINO\AppData\Local\Programs\Tesseract-OCR
+
+import cv2 #Importa Pythoncv para manipular
+import pytesseract #Libreria OCR
+
+pytesseract.pytesseract.tesseract_cmd=r"C:\Users\MATUTINO\AppData\Local\Programs\Tesseract-OCR\tessdata"
+
+#Cargar la imagen
+img_texto=cv2.imread("TEXTO_1.webp")
+
+#Redimensionar el tamaño de la imagen
+img_final=cv2.resize(img_texto,(800,400))
+
+#Convertir a escala de grises
+img_gris=cv2.cvtColor(img_final,cv2.COLOR_BGR2GRAY)
+#Separamos el fondo con el texto
+img_res=cv2.threshold(img_gris,120,255,cv2.THRESH_BINARY)[1]
+#Devuelve dos valores, los pixeles y la imagem procesada
+
+#Configurar OCR
+texto=pytesseract.image_to_string(img_res,lang="es")
+#Cmomo parametro la pasamos la variable con la imagen procesada y el idioma
+#Imprimimos el titulo
+print("Texto detectado")
+print(texto)
+
+cv2.imshow("Imagen analizada",img_final)
+cv2.waitKey(0)
+cv2.destroyAllWindows()</pre>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>📚 Glosario de Funciones</h3>
+
+                <div class="glosario-item">
+                    <h4>import pytesseract</h4>
+                    <p>Importa la libreria OCR</p>
+                    <h4>cv2.threshold</h4>
+                    <p>Convierte una imagen en escala de grises en una imagen binaria basándose en un valor umbral especificado.</p>
+                    <h4>cv2.THRESH_BINARY</h4>
+                    <p>Es una constante utilizada en cv2.threshold()la función de OpenCV para realizar la segmentación binaria de una imagen. Este método convierte una imagen en escala de grises en una imagen binaria (blanco y negro) según un valor umbral especificado.</p>
+                    <h4>pytesseract.image_to_string()</h4>
+                    <p>Es una herramienta de reconocimiento óptico de caracteres (OCR) que extrae texto de una imagen y lo devuelve como una cadena de caracteres</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
